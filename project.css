@@ -1,0 +1,70 @@
+.web{
+    margin-bottom: -15px;
+    font-weight: lighter;
+    color: #2F4F4F;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    margin-left: 10px;
+}
+
+.main{
+    text-align: right;
+    font-weight: lighter;
+    color: #2F4F4F;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    margin-top: -22px;
+    margin-right: 10px;
+}
+
+.filter {
+    height: 400px;
+    width: 200px;
+    margin: 60px 100px;
+    display: grid;
+    align-items: flex-start;
+    border: 2px solid black;
+}
+
+.dropbtn{
+    width: 100%;
+    text-align: left;
+    font-weight: bolder;
+}
+
+.dropdown{
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.toolsbtn{
+    width: 100%;
+    text-align: left;
+    font-weight: bold;
+}
+
+.tools{
+    border:1px solid black;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+
+.dropdown,
+  .tools {
+    margin-right: 20px; 
+}
+  
+#tableContainer {
+    flex-grow: 1; 
+    margin-top: 20px; 
+}
+
+.difference{
+    border: 1px solid black;
+    border-radius: 2px;
+    
+}  
+  
+  
+

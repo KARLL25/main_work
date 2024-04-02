@@ -1,0 +1,77 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="trigg.css">
+<title>AR.js</title>
+    </head>
+    <header>
+        <div class="web">WebAR</div>
+        <div class="main">Главная</div>
+    </header>
+    <body>
+      
+        <div class="selector">
+            
+            <a href="/project.html">Главная </a> 
+            <div>/</div>
+            <a href="/pages/AR.js/main/first.html">AR.js</a>
+            <div>/</div>
+            <div>Взаимодействие с триггерами</div>
+        </div>
+
+        
+        <div class="info">
+            <div class="video">
+                <video width="550px" height="200" controls src="/pages/AR.js/extra_features/trigger/trigger.mp4"></video>
+            </div>
+            <div class="text_1">
+                <ul> <h3>Известные проблемы</h3>
+                    <li>Работает на всех телефонах с <b>webgl</b> и <b>webrtc</b></li>
+                    <li>По умолчанию используется маркер Hiro, на самом деле не очень полезный</li>
+                    
+                </ul>
+            </div>
+            <div class="text_2">
+                <ul> <h3>Требования / особенности</h3>
+                    <li>Маркеры могут быть трех разных типов</li>
+                    <li>Отслеживание на основе маркеров очень легкое</li>
+                    <li><b>Открытый исходный код:</b> Это полностью открытый исходный код</li>
+                </ul>
+            </div>
+
+            <div class="phrase"><b>Фрагмент кода:</b></div>
+            <div class="fragment">
+            <pre><code id="htmlViewer" style="color:rgb(68, 68, 68); font-weight:400;background-color:rgb(240, 240, 240);background:rgb(240, 240, 240);display:block;padding: .5em;"><span style="color:rgb(31, 113, 153); font-weight:400;">&lt;!DOCTYPE <span style="color:rgb(31, 113, 153); font-weight:700;">html</span>&gt;</span>
+<span style="color:rgb(68, 68, 68); font-weight:400;">&lt;<span style="color:rgb(68, 68, 68); font-weight:700;">html</span>&gt;</span>
+  <span style="color:rgb(68, 68, 68); font-weight:400;">&lt;<span style="color:rgb(68, 68, 68); font-weight:700;">script</span> <span style="color:rgb(68, 68, 68); font-weight:400;">src</span>=<span style="color:rgb(136, 0, 0); font-weight:400;">&quot;https://aframe.io/releases/1.3.0/aframe.min.js&quot;</span>&gt;</span><span style="color:rgb(68, 68, 68); font-weight:400;">&lt;/<span style="color:rgb(68, 68, 68); font-weight:700;">script</span>&gt;</span>
+  <span style="color:rgb(136, 136, 136); font-weight:400;">&lt;!-- we import arjs version without NFT but with marker + location based support --&gt;</span>
+  <span style="color:rgb(68, 68, 68); font-weight:400;">&lt;<span style="color:rgb(68, 68, 68); font-weight:700;">script</span> <span style="color:rgb(68, 68, 68); font-weight:400;">src</span>=<span style="color:rgb(136, 0, 0); font-weight:400;">&quot;https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js&quot;</span>&gt;</span><span style="color:rgb(68, 68, 68); font-weight:400;">&lt;/<span style="color:rgb(68, 68, 68); font-weight:700;">script</span>&gt;</span>
+  <span style="color:rgb(68, 68, 68); font-weight:400;">&lt;<span style="color:rgb(68, 68, 68); font-weight:700;">body</span> <span style="color:rgb(68, 68, 68); font-weight:400;">style</span>=<span style="color:rgb(136, 0, 0); font-weight:400;">&quot;margin : 0px; overflow: hidden;&quot;</span>&gt;</span>
+    <span style="color:rgb(68, 68, 68); font-weight:400;">&lt;<span style="color:rgb(68, 68, 68); font-weight:700;">a-scene</span> <span style="color:rgb(68, 68, 68); font-weight:400;">embedded</span> <span style="color:rgb(68, 68, 68); font-weight:400;">arjs</span>&gt;</span>
+      <span style="color:rgb(68, 68, 68); font-weight:400;">&lt;<span style="color:rgb(68, 68, 68); font-weight:700;">a-marker</span> <span style="color:rgb(68, 68, 68); font-weight:400;">preset</span>=<span style="color:rgb(136, 0, 0); font-weight:400;">&quot;hiro&quot;</span>&gt;</span>
+        <span style="color:rgb(136, 136, 136); font-weight:400;">&lt;!-- we use cors proxy to avoid cross-origin problems --&gt;</span>
+        <span style="color:rgb(136, 136, 136); font-weight:400;">&lt;!--
+          ⚠️⚠️⚠️
+          https://arjs-cors-proxy.herokuapp.com/ is now offline, Heroku has dismissed all his free plans from November 2022.
+          You need to host your own proxy and use it instead. The proxy is based on CORS Anywhere (see https://github.com/Rob--W/cors-anywhere).
+          ⚠️⚠️⚠️
+        --&gt;</span>
+        <span style="color:rgb(68, 68, 68); font-weight:400;">&lt;<span style="color:rgb(68, 68, 68); font-weight:700;">a-entity</span>
+          <span style="color:rgb(68, 68, 68); font-weight:400;">position</span>=<span style="color:rgb(136, 0, 0); font-weight:400;">&quot;0 0 0&quot;</span>
+          <span style="color:rgb(68, 68, 68); font-weight:400;">scale</span>=<span style="color:rgb(136, 0, 0); font-weight:400;">&quot;0.05 0.05 0.05&quot;</span>
+          <span style="color:rgb(68, 68, 68); font-weight:400;">gltf-model</span>=<span style="color:rgb(136, 0, 0); font-weight:400;">&quot;https://arjs-cors-proxy.herokuapp.com/https://raw.githack.com/AR-js-org/AR.js/master/aframe/examples/image-tracking/nft/trex/scene.gltf&quot;</span>
+        &gt;</span><span style="color:rgb(68, 68, 68); font-weight:400;">&lt;/<span style="color:rgb(68, 68, 68); font-weight:700;">a-entity</span>&gt;</span>
+      <span style="color:rgb(68, 68, 68); font-weight:400;">&lt;/<span style="color:rgb(68, 68, 68); font-weight:700;">a-marker</span>&gt;</span>
+      <span style="color:rgb(68, 68, 68); font-weight:400;">&lt;<span style="color:rgb(68, 68, 68); font-weight:700;">a-entity</span> <span style="color:rgb(68, 68, 68); font-weight:400;">camera</span>&gt;</span><span style="color:rgb(68, 68, 68); font-weight:400;">&lt;/<span style="color:rgb(68, 68, 68); font-weight:700;">a-entity</span>&gt;</span>
+    <span style="color:rgb(68, 68, 68); font-weight:400;">&lt;/<span style="color:rgb(68, 68, 68); font-weight:700;">a-scene</span>&gt;</span>
+  <span style="color:rgb(68, 68, 68); font-weight:400;">&lt;/<span style="color:rgb(68, 68, 68); font-weight:700;">body</span>&gt;</span>
+<span style="color:rgb(68, 68, 68); font-weight:400;">&lt;/<span style="color:rgb(68, 68, 68); font-weight:700;">html</span>&gt;</span></code></pre>
+            
+          </div>
+        </div>
+
+        
+        
+        
+
+    </body>
+</html>
