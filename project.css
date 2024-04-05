@@ -23,36 +23,51 @@
     margin: 60px 100px;
     display: grid;
     align-items: flex-start;
-    border: 2px solid black;
+    
+    
+    
 }
 
 .dropbtn{
     width: 100%;
     text-align: left;
     font-weight: bolder;
+    border-bottom: 1px solid black;
+    background-color: lightgray;
+    border-radius: 5px 5px 1px 1px;
 }
 
 .dropdown{
     border: 1px solid black;
     border-radius: 5px;
+    
+    
+    
 }
 
 .toolsbtn{
     width: 100%;
     text-align: left;
     font-weight: bold;
+    border-bottom: 1px solid black;
+    background-color: lightgray;
+    border-radius: 5px 5px 1px 1px;
+}
+.word{
+    margin-left: 10px;
 }
 
 .tools{
-    border:1px solid black;
+    border: 1px solid black;
     border-radius: 5px;
     margin-top: 20px;
+    
 }
 
 
-.dropdown,
-  .tools {
+.dropdown, .tools {
     margin-right: 20px; 
+    
 }
   
 #tableContainer {
@@ -61,10 +76,47 @@
 }
 
 .difference{
-    border: 1px solid black;
-    border-radius: 2px;
     
+    border-radius: 2px;
+    width: auto;
+    
+     
 }  
   
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top:30px;
+    margin-left: 60px;
+    margin-right: 60px; 
+    text-wrap: wrap;
+
+}
+
+table{
+    border-collapse: collapse;
+}
+
+th{
+    padding: 8px;
+    text-align: center;
+    border: 2px solid #A9A9A9;
+    width: 150px;
+    background-color: lightgray;
+}
+th:first-child{
+    background-color: transparent;
+}
+
+td{
+    padding: 8px;
+    border: 2px solid #A9A9A9;
+    text-align: center;
+    
+}
+td:first-child{
+    text-align: left;
+}
   
 

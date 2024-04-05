@@ -8,9 +8,10 @@
         <div class="main">Главная</div>
     </header>
 <body>
+<div class="container">    
     <div class="filter">   <!-- фильтры -->
         <div class="dropdown">
-            <button class="dropbtn">Триггеры</button>
+            <div class="dropbtn"><div class="word">Триггеры</div></div>
             <div class="dropdown-content" id="Content">
                 <input type="checkbox" id="option1" name="option" value="option1">
                 <label for="option1">Лицо</label><br>
@@ -26,7 +27,7 @@
 
         </div>
         <div class="tools">
-            <button class="toolsbtn">Технология</button>
+            <div class="toolsbtn"><div class="word">Технология</div></div>
             <div class="tools-content" id="toolsa">
                 <input type="checkbox" id="tool1" name="tool" value="tool1" data-link="pages/AR.js/main/first.html" data-trigger="-,+,-,-,+">
                 <label for="tool1">AR.js</label><br>
@@ -53,10 +54,9 @@
             </div>      
         </div>       
     </div>
-
-    <div class="difference" id="tableContainer">   
-                
-    </div>
+    <div class="difference" id="tableContainer"></div>
+</div>
+    
 <script src="script.js"></script>                     
 </body>
 </html>
