@@ -46,6 +46,7 @@
     flex:1;
     background-color: black;
     text-align: center;
+    border: 1px solid black;
 }
 
 .text_1{
@@ -55,7 +56,9 @@
 
 .text_2{
     flex:1;
-    border: 1px solid black;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
 }
 
 .phrase{
@@ -66,11 +69,10 @@
 }
 
 .fragment{
-    border:1px solid black;
+    
     margin-top: 20;
     width: 100%;
     max-height: 200px;
-    overflow-y: auto;
     text-align: left;
     background-color: rgb(240, 240, 240);;
     flex-wrap: wrap;
@@ -80,11 +82,13 @@
 .vid{
     flex:1;
     background-color: white;
+    border: 1px solid black;
 }
 
 .infor{
     flex:1;
-    border: 1px solid black;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
     background-color: white;
     justify-content: center;
     

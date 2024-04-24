@@ -1,7 +1,7 @@
 <html>
     <head>
         <link rel="stylesheet" href="zapbox.css">
-<title>AR.js</title>
+<title>Zap.Works</title>
     </head>
     <header>
         <div class="web">WebAR</div>
@@ -13,7 +13,7 @@
             
             <a href="/project.html">Главная </a> 
             <div>/</div>
-            <a href="/pages/Zap.Works/main/seconds.html">AR.js</a>
+            <a href="/pages/Zap.Works/main/seconds.html">Zap.Works</a>
             <div>/</div>
             <div>ZapBox</div>
         </div>
@@ -21,89 +21,39 @@
         
         <div class="info">
             <div class="video">
-                <video width="550px" height="200" controls src="/pages/Zap.Works/base_elements/face/face.gif"></video>
+                <img width="560px" height="200" controls src="/pages/Zap.Works/extra_elements/zapbox/zapbox.gif"></img>
             </div>
             <div class="text_1">
                 <ul> <h3>Известные проблемы</h3>
-                    <li>Работает на всех телефонах с <b>webgl</b> и <b>webrtc</b></li>
-                    <li>Отслеживание изображений требует больше ресурсов процессора</li>
-                    <li>На <b>Android / Chrome</b> можно столкнуться с проблемами из-за возможного аппаратного ограничения устройства.</li>
+                    <li>Возможные проблемы могут включать в себя <b>точность отслеживания объектов</b> в пространстве, особенно при <b>быстрых движениях</b> или при <b>недостаточном освещении.</b></li>
+                    <li>Также может быть сложно обеспечить <b>стабильное отслеживание</b> при работе в различных <b>условиях окружающей среды.</b></li>
+                    
                 </ul>
             </div>
             <div class="text_2">
                 <ul> <h3>Требования / особенности</h3>
-                    <li>Нужно изображение хорошего качества</li>
-                    <li>Отслеживание изображений требует больше ресурсов процессора</li>
-                    <li><b>Открытый исходный код:</b> Это полностью открытый исходный код</li>
+                    <li>Для <b>эффективного отслеживания объектов</b> с использованием ZapBox необходимо иметь <b>четкое видение камеры.</b></li>
+                    <li>Также для большей эффективности потребуется <b>хорошая освещенность помещения</b> и <b>устойчивая поверхность</b> для размещения отслеживаемых объектов.</li>
+                    
                 </ul>
             </div>
 
-            <div class="phrase"><b>Фрагмент кода:</b></div>
+            <div class="phrase"><b>Дополнительная информация</b></div>
             <div class="fragment">
-              <pre>
-              <code id="htmlViewer" style="color:rgb(68, 68, 68); font-weight:400;background-color:rgb(240, 240, 240);background:rgb(240, 240, 240);display:block;padding: .5em;"><span style="color:rgb(68, 68, 68); font-weight:400;">&lt;<span style="color:rgb(68, 68, 68); font-weight:700;">script</span> <span style="color:rgb(68, 68, 68); font-weight:400;">src</span>=<span style="color:rgb(136, 0, 0); font-weight:400;">&quot;https://cdn.jsdelivr.net/gh/aframevr/aframe@1c2407b26c61958baa93967b5412487cd94b290b/dist/aframe-master.min.js&quot;</span>&gt;</span><span style="color:rgb(68, 68, 68); font-weight:400;">&lt;/<span style="color:rgb(68, 68, 68); font-weight:700;">script</span>&gt;</span>
-<span style="color:rgb(68, 68, 68); font-weight:400;">&lt;<span style="color:rgb(68, 68, 68); font-weight:700;">script</span> <span style="color:rgb(68, 68, 68); font-weight:400;">src</span>=<span style="color:rgb(136, 0, 0); font-weight:400;">&quot;https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js&quot;</span>&gt;</span><span style="color:rgb(68, 68, 68); font-weight:400;">&lt;/<span style="color:rgb(68, 68, 68); font-weight:700;">script</span>&gt;</span>
-  
-<span style="color:rgb(68, 68, 68); font-weight:400;">&lt;<span style="color:rgb(68, 68, 68); font-weight:700;">style</span>&gt;</span><span style="color:rgb(68, 68, 68); font-weight:400;">
-    <span style="color:rgb(136, 0, 0); font-weight:400;">.arjs-loader</span> {
-      <span style="color:rgb(68, 68, 68); font-weight:700;">height</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">100%</span>;
-      <span style="color:rgb(68, 68, 68); font-weight:700;">width</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">100%</span>;
-      <span style="color:rgb(68, 68, 68); font-weight:700;">position</span>: absolute;
-      <span style="color:rgb(68, 68, 68); font-weight:700;">top</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">0</span>;
-      <span style="color:rgb(68, 68, 68); font-weight:700;">left</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">0</span>;
-      <span style="color:rgb(68, 68, 68); font-weight:700;">background-color</span>: <span style="color:rgb(57, 115, 0); font-weight:400;">rgba</span>(<span style="color:rgb(136, 0, 0); font-weight:400;">0</span>, <span style="color:rgb(136, 0, 0); font-weight:400;">0</span>, <span style="color:rgb(136, 0, 0); font-weight:400;">0</span>, <span style="color:rgb(136, 0, 0); font-weight:400;">0.8</span>);
-      <span style="color:rgb(68, 68, 68); font-weight:700;">z-index</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">9999</span>;
-      <span style="color:rgb(68, 68, 68); font-weight:700;">display</span>: flex;
-      <span style="color:rgb(68, 68, 68); font-weight:700;">justify-content</span>: center;
-      <span style="color:rgb(68, 68, 68); font-weight:700;">align-items</span>: center;
-    }
-  
-    <span style="color:rgb(136, 0, 0); font-weight:400;">.arjs-loader</span> <span style="color:rgb(68, 68, 68); font-weight:700;">div</span> {
-      <span style="color:rgb(68, 68, 68); font-weight:700;">text-align</span>: center;
-      <span style="color:rgb(68, 68, 68); font-weight:700;">font-size</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">1.25em</span>;
-      <span style="color:rgb(68, 68, 68); font-weight:700;">color</span>: white;
-    }
-  </span><span style="color:rgb(68, 68, 68); font-weight:400;">&lt;/<span style="color:rgb(68, 68, 68); font-weight:700;">style</span>&gt;</span>
-  
-  <span style="color:rgb(68, 68, 68); font-weight:400;">&lt;<span style="color:rgb(68, 68, 68); font-weight:700;">body</span> <span style="color:rgb(68, 68, 68); font-weight:400;">style</span>=<span style="color:rgb(136, 0, 0); font-weight:400;">&quot;margin : 0px; overflow: hidden;&quot;</span>&gt;</span>
-    <span style="color:rgb(136, 136, 136); font-weight:400;">&lt;!-- minimal loader shown until image descriptors are loaded --&gt;</span>
-    <span style="color:rgb(68, 68, 68); font-weight:400;">&lt;<span style="color:rgb(68, 68, 68); font-weight:700;">div</span> <span style="color:rgb(68, 68, 68); font-weight:400;">class</span>=<span style="color:rgb(136, 0, 0); font-weight:400;">&quot;arjs-loader&quot;</span>&gt;</span>
-      <span style="color:rgb(68, 68, 68); font-weight:400;">&lt;<span style="color:rgb(68, 68, 68); font-weight:700;">div</span>&gt;</span>Loading, please wait...<span style="color:rgb(68, 68, 68); font-weight:400;">&lt;/<span style="color:rgb(68, 68, 68); font-weight:700;">div</span>&gt;</span>
-    <span style="color:rgb(68, 68, 68); font-weight:400;">&lt;/<span style="color:rgb(68, 68, 68); font-weight:700;">div</span>&gt;</span>
-    <span style="color:rgb(68, 68, 68); font-weight:400;">&lt;<span style="color:rgb(68, 68, 68); font-weight:700;">a-scene</span>
-      <span style="color:rgb(68, 68, 68); font-weight:400;">vr-mode-ui</span>=<span style="color:rgb(136, 0, 0); font-weight:400;">&quot;enabled: false;&quot;</span>
-      <span style="color:rgb(68, 68, 68); font-weight:400;">renderer</span>=<span style="color:rgb(136, 0, 0); font-weight:400;">&quot;logarithmicDepthBuffer: true;&quot;</span>
-      <span style="color:rgb(68, 68, 68); font-weight:400;">embedded</span>
-      <span style="color:rgb(68, 68, 68); font-weight:400;">arjs</span>=<span style="color:rgb(136, 0, 0); font-weight:400;">&quot;trackingMethod: best; sourceType: webcam;debugUIEnabled: false;&quot;</span>
-    &gt;</span>
-      <span style="color:rgb(136, 136, 136); font-weight:400;">&lt;!-- we use cors proxy to avoid cross-origin problems --&gt;</span>
-  
-      <span style="color:rgb(136, 136, 136); font-weight:400;">&lt;!--
-        ⚠️⚠️⚠️
-        https://arjs-cors-proxy.herokuapp.com/ is now offline, Heroku has dismissed all his free plans from November 2022.
-        You need to host your own proxy and use it instead. The proxy is based on CORS Anywhere (see https://github.com/Rob--W/cors-anywhere).
-        ⚠️⚠️⚠️
-      --&gt;</span>
-  
-      <span style="color:rgb(68, 68, 68); font-weight:400;">&lt;<span style="color:rgb(68, 68, 68); font-weight:700;">a-nft</span>
-        <span style="color:rgb(68, 68, 68); font-weight:400;">type</span>=<span style="color:rgb(136, 0, 0); font-weight:400;">&quot;nft&quot;</span>
-        <span style="color:rgb(68, 68, 68); font-weight:400;">url</span>=<span style="color:rgb(136, 0, 0); font-weight:400;">&quot;https://arjs-cors-proxy.herokuapp.com/https://raw.githack.com/AR-js-org/AR.js/master/aframe/examples/image-tracking/nft/trex/trex-image/trex&quot;</span>
-        <span style="color:rgb(68, 68, 68); font-weight:400;">smooth</span>=<span style="color:rgb(136, 0, 0); font-weight:400;">&quot;true&quot;</span>
-        <span style="color:rgb(68, 68, 68); font-weight:400;">smoothCount</span>=<span style="color:rgb(136, 0, 0); font-weight:400;">&quot;10&quot;</span>
-        <span style="color:rgb(68, 68, 68); font-weight:400;">smoothTolerance</span>=<span style="color:rgb(136, 0, 0); font-weight:400;">&quot;.01&quot;</span>
-        <span style="color:rgb(68, 68, 68); font-weight:400;">smoothThreshold</span>=<span style="color:rgb(136, 0, 0); font-weight:400;">&quot;5&quot;</span>
-      &gt;</span>
-        <span style="color:rgb(68, 68, 68); font-weight:400;">&lt;<span style="color:rgb(68, 68, 68); font-weight:700;">a-entity</span>
-          <span style="color:rgb(68, 68, 68); font-weight:400;">gltf-model</span>=<span style="color:rgb(136, 0, 0); font-weight:400;">&quot;https://arjs-cors-proxy.herokuapp.com/https://raw.githack.com/AR-js-org/AR.js/master/aframe/examples/image-tracking/nft/trex/scene.gltf&quot;</span>
-          <span style="color:rgb(68, 68, 68); font-weight:400;">scale</span>=<span style="color:rgb(136, 0, 0); font-weight:400;">&quot;5 5 5&quot;</span>
-          <span style="color:rgb(68, 68, 68); font-weight:400;">position</span>=<span style="color:rgb(136, 0, 0); font-weight:400;">&quot;50 150 0&quot;</span>
-        &gt;</span>
-        <span style="color:rgb(68, 68, 68); font-weight:400;">&lt;/<span style="color:rgb(68, 68, 68); font-weight:700;">a-entity</span>&gt;</span>
-      <span style="color:rgb(68, 68, 68); font-weight:400;">&lt;/<span style="color:rgb(68, 68, 68); font-weight:700;">a-nft</span>&gt;</span>
-      <span style="color:rgb(68, 68, 68); font-weight:400;">&lt;<span style="color:rgb(68, 68, 68); font-weight:700;">a-entity</span> <span style="color:rgb(68, 68, 68); font-weight:400;">camera</span>&gt;</span><span style="color:rgb(68, 68, 68); font-weight:400;">&lt;/<span style="color:rgb(68, 68, 68); font-weight:700;">a-entity</span>&gt;</span>
-    <span style="color:rgb(68, 68, 68); font-weight:400;">&lt;/<span style="color:rgb(68, 68, 68); font-weight:700;">a-scene</span>&gt;</span>
-  <span style="color:rgb(68, 68, 68); font-weight:400;">&lt;/<span style="color:rgb(68, 68, 68); font-weight:700;">body</span>&gt;</span></code></pre>
-          </div>
+              <div class="vid"> <video width="560px" height="200px" controls src="/pages/Zap.Works/extra_elements/zapbox/tracker.mp4"></video>
+                </div>
+                <div class="infor"><ul>
+                  <h3>Добавление отслеживания ZapBox</h3>
+                  <li>Создавать контент, который отслеживается до кодов точек и контроллеров ZapBox, так же просто, как размещать контент в группе <b>ZapBox Tracker.</b></li>
+                    <li>Чтобы добавить группу <b>ZapBox Tracker</b> в иерархию, щелкните правой кнопкой мыши узел группы и выберите <b>Создать > Отслеживание > ZapBox Tracker.</b></li>
+                    
+                </ul> </div>
+                <div class="infor-1"><ul>
+                  <h3>Отслеживание ZapBox</h3>
+                  <li>Группа <b>отслеживания ZapBox</b> состоит из трех отдельных групп: по одной для карты кодов точек и по одной для каждого контроллера.</li>
+                  <li>Если вы удалите одну из этих групп, вы можете добавить ее обратно, щелкнув правой кнопкой мыши на группе <b>ZapBox Tracker</b> и выбрав либо <b>Создать > Карта ZapBox,</b> либо <b>Контроллер ZapBox.</b></li></ul></div>
+       
+            </div>
         </div>
 
         
