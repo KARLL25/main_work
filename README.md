@@ -1,3 +1,3 @@
  # Демо-видео веб-ресурса
  
-![Video](https://github.com/KARLL25/main_work/demo.mp4)
+![Video](https://disk.yandex.ru/i/_30mtYMr-WOCyA)
