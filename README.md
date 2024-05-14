@@ -1,3 +1,4 @@
  # Демо-видео веб-ресурса
-![](demo.mp4)
- 
+<video>
+  <source src="demo.mp4" type="video/mp4">
+</video>
