@@ -1,3 +1,2 @@
- # Демо-видео веб-ресурса
+# Курсовая работа
  
-![Video](https://disk.yandex.ru/i/_30mtYMr-WOCyA)
